@@ -1,0 +1,70 @@
+h3, h2{
+    font-family:  'Roboto Mono', monospace;
+    font-weight: 200;
+}
+
+p{
+    font-family: 'Dosis', sans-serif;
+}
+
+.card-container{
+    margin-top: 130px;
+    z-index: 4;
+    .card{
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 3px #666;
+        height: 560px;
+        margin: 70px 25px;
+        position: relative;
+        transition: ease-in-out 0.5s;
+        width: 325px;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+        }
+        .card-article{
+            background-color: #fff;
+            border-radius:10px;
+            bottom: 3px;
+            height: 175px;
+            margin-left: 23px;
+            opacity: 0.5;
+            overflow: hidden;
+            position: absolute;
+            transition: ease-in-out 0.5s;
+            width: 280px;
+            &:hover{
+                background-color: lightcoral;
+                height: 500px;
+                opacity: 1;
+            }
+            h3{
+                margin:10px;
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+            h2{
+                margin:10px 10px 0 10px;
+                font-size: 20px;
+            }
+            p{
+                text-align: justify;
+                margin-top: 0;
+                padding: 0 27px 0 10px;
+            }
+        }
+        .icon{
+            cursor: pointer;
+            left:280px;
+            position: absolute;
+            top:535px;
+            i{
+                font-size: 20px;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
