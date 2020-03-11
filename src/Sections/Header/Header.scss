@@ -1,5 +1,6 @@
 $title:#666;
 $sub-title:#737373;
+$rectangle:#fff;
 
 h1, h2, p, a{
     font-family: 'Roboto', sans-serif;
@@ -8,7 +9,7 @@ h1, h2, p, a{
 .container-header{
     background: rgb(242,241,211);
     background: radial-gradient(circle, rgba(242,241,211,1) 0%, rgba(242,187,197,1) 100%);
-    height: 150px;
+    height: 180px;
     position: relative;
     position: fixed;
     top: 0;
@@ -35,41 +36,77 @@ h1, h2, p, a{
             position: absolute;
             right: -9px;
             .rectangle{
+                background-color: $rectangle;
                 border-radius: 3px;
-                width: 80px;
                 height: 30px;
-                background-color: $sub-title;
-            }
-            h2{
-                color:$sub-title;
-                margin-top: 12px;
-                text-transform: uppercase;
-                font-size: 10px;
-                margin-bottom: 0;                
-            }
-            p{
-                margin-top: 5px;
-                color:$title;
-                text-transform: uppercase;
-                font-size: 8px;
+                width: 80px;
+                h2{
+                    color:$sub-title;
+                    margin-top: 12px;
+                    padding: 5px;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    margin-bottom: 0;                
+                }
+                p{
+                    margin-top: 0;
+                    color:$title;
+                    text-transform: uppercase;
+                    font-size: 8px;
+                }
             }
         }
     }
-    nav{
-        position: absolute;
-        width: 100%;
-        bottom: 2px;
-        text-transform: uppercase;
-        a{
-            color:$sub-title;
-            font-size: 15px;
-            padding: 8px;
-            display: inline-block;
+    //BTTN LOGIN
+    .container-bttn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px;
+        a.animated-button:link, a.animated-button:visited{
+            border-radius: 0;
+            color: $sub-title;  
+            font-size:14px;
+            letter-spacing: .08em;
+            margin: 15px;
+            overflow: hidden;
+            padding: 14px 15px;
+            position: relative;
+            text-align: center;
             text-decoration: none;
-            border-radius: 2px;
+            text-transform: uppercase;
+            transition: all 1s ease;
+        }
+        a.animated-button.thar-two {
+            border: 2px solid lightcoral;
+            color:$title;
+            cursor: pointer;
+            display: block;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+            width: 95px;
             &:hover{
-                box-shadow: 0 0 0 1px #fff;
+                color:$rectangle !important;
+                background-color: transparent;
             }
+        }
+        a.animated-button.thar-two:hover:before {
+            top: 0%;
+            bottom: auto;
+            height: 100%;
+        }
+        a.animated-button.thar-two:before {
+            display: block;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            height: 0px;
+            width: 100%;
+            z-index: -1;
+            content: '';
+            color: #000;
+            background: lightcoral;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
         }
     }
 }
