@@ -6,17 +6,17 @@ const Footer = () =>{
         <footer className="container-ftr">
             <ul className="no-list container-links">
                 <li>
-                    <a className="logo" href=" https://www.linkedin.com/in/dolores-perez-laborda/" aria-label="Link to LinkedIn">
+                    <a className="logo" target="_blank" href=" https://www.linkedin.com/in/dolores-perez-laborda/" aria-label="Link to LinkedIn">
                         <i class="fa fa-linkedin"  aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a className="logo" href="https://github.com/dperezlaborda" aria-label="Link to GitHub">
+                    <a className="logo" target="_blank" href="https://github.com/dperezlaborda" aria-label="Link to GitHub">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a className="logo" href="https://www.instagram.com/loli.perezlaborda/" aria-label="Link to Instagram">
+                    <a className="logo" target="_blank" href="https://www.instagram.com/loli.perezlaborda/" aria-label="Link to Instagram">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </li>
