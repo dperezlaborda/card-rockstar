@@ -1,0 +1,39 @@
+.container-ftr{
+    box-sizing: border-box;
+    box-shadow:0 -3px 10px -2px rgba(0,0,0,0.3);
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    height: 100px;
+    background-color:rgba(242,241,211,1);
+    .no-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 15px;
+        padding: 0;
+        width: 100px;
+        .logo{
+            padding: 3px;
+            .fa{
+                color:#737373;
+                font-size: 23px;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    color:lightcoral;
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+    .box-ftr{
+        position: absolute;
+        bottom: 2px;
+        p{
+            font-size: 13px;
+            color: #737373;
+        }
+    }
+}

@@ -2,6 +2,7 @@ body{
   background-image: url('./Images/fondo4.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 .card-container{

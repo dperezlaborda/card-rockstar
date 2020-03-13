@@ -1,6 +1,9 @@
 $title:#666;
 $sub-title:#737373;
 $rectangle:#fff;
+$mid-grdnt:rgba(242,241,211,1);
+$side-grdnt:rgba(242,187,197,1);
+
 
 h1, h2, p, a{
     font-family: 'Roboto', sans-serif;
@@ -8,7 +11,8 @@ h1, h2, p, a{
 
 .container-header{
     background: rgb(242,241,211);
-    background: radial-gradient(circle, rgba(242,241,211,1) 0%, rgba(242,187,197,1) 100%);
+    background: radial-gradient(circle, $mid-grdnt 0%, $side-grdnt 100%);
+    box-shadow:-2px 7px 10px -2px rgba(0,0,0,0.3);
     height: 180px;
     position: relative;
     position: fixed;
