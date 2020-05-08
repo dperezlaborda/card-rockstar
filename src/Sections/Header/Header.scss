@@ -14,10 +14,10 @@ h1, h2, p, a{
     background: radial-gradient(circle, $mid-grdnt 0%, $side-grdnt 100%);
     box-shadow:-2px 7px 10px -2px rgba(0,0,0,0.3);
     height: 180px;
+    overflow: hidden;
     position: relative;
     position: fixed;
     top: 0;
-    overflow: hidden;
     transition: all .5s ease;
     text-align: center;
     width: 100%;
@@ -28,11 +28,11 @@ h1, h2, p, a{
         position: relative;
         h1{
             color:$title;
-            transition: all .3s ease;
             font-size: 23px;
             margin-bottom:0;
-            text-transform: uppercase;
             scale: 0;
+            text-transform: uppercase;
+            transition: all .3s ease;
         }
         .right{
             display: inline-block;
@@ -46,22 +46,22 @@ h1, h2, p, a{
                 width: 80px;
                 h2{
                     color:$sub-title;
+                    font-size: 10px;
+                    margin-bottom: 0;                
                     margin-top: 12px;
                     padding: 5px;
                     text-transform: uppercase;
-                    font-size: 10px;
-                    margin-bottom: 0;                
                 }
                 p{
-                    margin-top: 0;
                     color:$title;
-                    text-transform: uppercase;
                     font-size: 8px;
+                    margin-top: 0;
+                    text-transform: uppercase;
                 }
             }
         }
     }
-    //BTTN LOGIN
+    //BTTN MENU
     .container-bttn{
         display: flex;
         flex-direction: row;
