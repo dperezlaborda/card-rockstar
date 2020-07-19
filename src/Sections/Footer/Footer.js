@@ -11,12 +11,12 @@ const Footer = () =>{
                     </a>
                 </li>
                 <li>
-                    <a className="logo" target="_blank" href="https://github.com/dperezlaborda" aria-label="Link to GitHub">
+                    <a className="logo" href="https://github.com/dperezlaborda" aria-label="Link to GitHub">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a className="logo" target="_blank" href="https://www.instagram.com/loli.perezlaborda/" aria-label="Link to Instagram">
+                    <a className="logo" href="https://www.instagram.com/loli.perezlaborda/" aria-label="Link to Instagram">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </li>
